@@ -1,0 +1,9 @@
+.calculadora {
+    border: solid #b0d9d3;
+    padding: 10px;
+    background-color: #2db398;
+    color: white;
+}
+.calculadora h2 {
+    text-transform: uppercase;
+}
