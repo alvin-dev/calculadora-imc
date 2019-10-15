@@ -28,6 +28,7 @@ var calculadora = document.querySelector('#calculadora');
 
 var campoPeso = document.querySelector('#peso');
 var campoAltura = document.querySelector('#altura');
+var btn = document.getElementById('btn');
 
 var resultado = document.querySelector('#resultado');
 
@@ -40,4 +41,19 @@ function manipulaInput(){
 
         resultado.innerHTML = `<h3>IMC: ${imc.toFixed(2)} <br> ${feedback}</h3>`;
     }
-}
+};
+
+// calcula ao clicar no botão
+btn.addEventListener("click", manipulaInput);
+
+btn.addEventListener("keypress", manipulaInput);
+
+$(window).keypress(function (e) {
+    //use e.which
+    var keyCode = e.which;
+    console.log(e, keyCode, e.which)
+    if (keyCode == 119) {
+        console.log("You pressed W!");
+        alert("You pressed W!");
+    }
+})
