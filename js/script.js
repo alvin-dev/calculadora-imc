@@ -2,8 +2,8 @@
 // peso / altura * altura 
 
 function calculaIMC(peso, altura) {
-    var alturaMetros = altura / 100;
-    var resultadoIMC = peso / (alturaMetros * alturaMetros);
+    //var alturaMetros = altura / 100;
+    var resultadoIMC = peso / (altura * altura);
 
     return resultadoIMC;
 }
